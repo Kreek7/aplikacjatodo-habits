@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Python Flask Bucket List App</title>
+
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+    <script src="../static/js/jquery-1.11.2.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+
+                    <li role="presentation"><a href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted"></h3>
+        </div>
+        <section>
+            <form class="form-horizontal" method="post" action="/listofCompleteWish">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend></legend>
+
+                    <!-- Text input-->
+
+                    <select id="selected2" name="selected2">
+                        <option value="Wszystkie">Wszystkie</option>
+                        <option value="Zakupy">Zakupy</option>
+                        <option value="Filmy do obejrzenia">Filmy do obejrzenia</option>
+                        <option value="Rodzina">Rodzina</option>
+                        <option value="Praca">Praca</option>
+                        <option value="Hobby">Hobby</option>
+                        <option value="Ogolne">Ogolne</option>
+
+                    </select>
+
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="singlebutton"></label>
+                        <div class="col-md-4">
+                            <input id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="OK" />
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </section>
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+</body>
+
+</html>
